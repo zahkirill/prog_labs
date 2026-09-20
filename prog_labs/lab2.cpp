@@ -16,7 +16,7 @@ int main()
 
 	std::printf("%f\n", LenCircle);
 	std::printf("%f\n", AreaCircle);
-	std::printf("%f\n", AreaSfere);
+	std::printf("%f\n", AreaSfere); 
 	std::printf("%f\n", ValueSfere);
 
 	//#2
@@ -34,4 +34,16 @@ int main()
 	std::printf("%lld\n", years);
 
 	//#4
+	double a = 0.5;
+	double b = 0.5;
+	
+	double stepen = pow(sin(b), 2) + cos(pow(b, 3));
+	double numerator = pow(a, stepen) + cbrt(pow(b, 2));
+
+	double part1 = abs(a * tan(b));
+	double part2 = 1.0 - exp(sqrt(a));
+	double denominator = sqrt(sqrt(abs(part1 / part2)));
+
+	double y = sqrt(abs(numerator / denominator));
+	std::printf("%.3f\n", y);
 }
